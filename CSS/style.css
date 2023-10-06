@@ -1,5 +1,147 @@
+/* RESET */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+/* COmMMON */
+body {
+    background-color: black;
+    color: white;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+}
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+
+}
+.btn {
+    color: inherit;
+    all: unset;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+}
+.btn.btn-secondary {
+    background-color: #4a4a4a;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+.btn.btn-secondary:hover {
+    background-color: yellow;
+    color: black;
+  }
+.btn.btn-secondary:active {
+    background-color: red;
+}
+
+/* HEADER */
+header {
+    height: 50px;
+    text-align: right;
+    padding: 5px 5px 0 0;
+}
+header .btn-secondary{
+    border-radius: 5px;
+}
+
+/* MAIN */
+main {
+    height: calc(100% - 50px - 80px);
+    overflow-y: auto;
+    padding-bottom: 100px;
+}
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.user {
+    width: 240px;
+    padding: 10px 5px;
+    border: 1px dotted black;
+    position: relative;
+}
+.user-info img {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+}
+.user-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 3px 5px;
+    font-size: 14px;
+    background-color: rgba(0, 0,0, 0.5);
+}
+.user-name i{
+    color: red;
+}
+
+/* FOOTER */
+footer {
+    height: 80px;
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-flex {
+    display: flex;
+    gap: 15px;
+}
+.footer-left,
+.footer-right {
+    width: 15%;
+}
+.footer-left {
+    padding-left: 10px;
+}
+.footer-right {
+    display: flex;
+    justify-content: right;
+    height: 100%;
+}
+.btn.footer-tool i {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+.btn.chevron i {
+    font-size: 10px;
+}
+.button-container.active .footer-tool i {
+    color: #4bc800
+}
+footer .btn.btn-secondary {
+    padding: 20px;
+    color: #ff0000;
+}
+
+/*
+Scrollbar
+*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ff0000;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+  }
